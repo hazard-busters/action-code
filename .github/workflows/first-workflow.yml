@@ -9,11 +9,11 @@ on: workflow_dispatch
 jobs: 
   job-1: # in job-1, you need to define the environment where different steps (or tasks) will run. This is called a runner. 
          # https://docs.github.com/en/actions/concepts/runners/about-github-hosted-runners 
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps: # define steps that will run on the runner. 
-      name: welcome message # give a name to the first step
-      run: echo "welcome to the first ever step, job, workflow written by you!
-      name: leave message # name for another step
-      run: echo "my work is done here!"
+      - name: welcome message # give a name to the first step
+      - run: echo "welcome to the first ever step, job, workflow written by you!
+      - name: leave message # name for another step
+      - run: echo "my work is done here!"
     
   
