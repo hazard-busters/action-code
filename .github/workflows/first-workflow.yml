@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: # define steps that will run on the runner. 
       - name: welcome message # give a name to the first step
-        run: echo "welcome to the first ever step, job, workflow written by you!
+        run: echo "welcome to the first ever step, job, workflow written by you!"
       - name: leave message # name for another step
         run: echo "my work is done here!"
     
